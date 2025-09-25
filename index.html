@@ -1453,7 +1453,7 @@
                         <div style="display: flex; align-items: flex-start; gap: 12px;">
                             <input type="checkbox" id="consent" name="consent" required style="margin-top: 6px;">
                             <label for="consent" style="font-size: 15px; line-height: 1.6; color: var(--text-secondary);">
-                                I consent to being contacted by Ed Zahnle, Washington's definitive commercial trucking insurance expert, regarding my quote. I understand Ed will personally review my information and contact me within 24 hours with expert recommendations from his elite carrier portfolio including Sentry Insurance, Progressive Commercial, BHHC, and GAIC. I acknowledge that Ed Zahnle is Washington's most experienced commercial trucking insurance expert with 15+ years specialization and elite carrier access unmatched in the state.
+                                I consent to being contacted by Ed Zahnle regarding my Washington commercial trucking insurance quote. I understand Ed will personally review my information and contact me within 24 hours with recommendations from Network Truck Insurance Services' carrier portfolio including Sentry Insurance, Progressive Commercial, BHHC, and GAIC. I acknowledge that Network Truck Insurance Services is a west coast leader and top 25 Progressive commercial agency with excellent carrier access.
                             </label>
                         </div>
                     </div>
@@ -1479,7 +1479,7 @@
             
             // Show loading state
             submitBtn.disabled = true;
-            submitBtn.innerHTML = 'Submitting to Ed Zahnle - Washington Expert...';
+            submitBtn.innerHTML = 'Submitting to Ed Zahnle - Washington Pro...';
             
             try {
                 // Collect form data
@@ -1489,10 +1489,10 @@
                 // Add expert metadata
                 data.timestamp = new Date().toISOString();
                 data.quoteId = `WA-EXPERT-${Date.now()}`;
-                data.expert_agent = 'Ed Zahnle - Washington Commercial Trucking Insurance Expert';
-                data.expert_credentials = '15+ Years Washington Specialist, Elite Producer: Sentry, Progressive, BHHC, GAIC';
-                data.form_type = 'Washington Expert Commercial Trucking Insurance Quote - Ed Zahnle';
-                data.carrier_access = 'Sentry Insurance Elite, Progressive Premier, BHHC Specialty, GAIC Competitive';
+                data.expert_agent = 'Ed Zahnle - Washington Commercial Trucking Insurance Professional';
+                data.expert_credentials = '15+ Years Washington Experience, Elite Producer at Network Truck Insurance Services';
+                data.form_type = 'Washington Commercial Trucking Insurance Quote - Ed Zahnle';
+                data.carrier_access = 'Network Truck Insurance Services - West Coast Leader & Top 25 Progressive Agency';
                 data.specialization = 'Boeing Aerospace, Microsoft Tech, Amazon Distribution, Timber Operations, Port Logistics';
                 
                 // Submit to Google Apps Script - handles everything server-side
@@ -1514,7 +1514,7 @@
                 
             } catch (error) {
                 console.error('Expert form submission error:', error);
-                alert('Your quote may have been saved to our system. Ed Zahnle will contact you at the provided phone number within 24 hours for expert service.');
+                alert('Your quote may have been saved to our system. Ed Zahnle will contact you at the provided phone number within 24 hours for professional service.');
             } finally {
                 // Reset button state
                 submitBtn.disabled = false;
